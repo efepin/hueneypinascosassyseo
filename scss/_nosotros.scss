@@ -1,0 +1,48 @@
+/*Nosotros*/
+
+$colores-fondo:(
+    /* clave:  valor*/
+        "azul": #344d70,
+        "celeste": #559aaf,
+        "gris": #88A0B8,
+        "marron": #93714a,
+        "blanco": #BAC6D8,
+    );
+
+@mixin propfondo {
+    width: 100%;
+    margin: 0% auto;
+    background-color: #344d70;
+    
+}
+
+
+.bodynosotros{
+    display: grid;
+    grid-template-rows: repeat(6, fr);
+    grid-template-columns: 20% 60% 20%;
+    @include propfondo();
+    .nosotrosmain{
+        grid-column: 1/4;
+        grid-row: 3/6;
+        color: white;
+        @include propfondo();
+        margin: 0   auto;
+        text-align: center;
+        .carrusel{
+            background-image: url(../Imagenes/caminochalten2.png);
+            padding: 10px;}
+        .textonosotros{
+                padding: 15px;
+                font-size: 1rem;
+                background-color: #344d70;
+            }
+    }
+}
+
+.textonosotros{
+    color: map-get($colores-fondo, gris);
+}
+
+
+
