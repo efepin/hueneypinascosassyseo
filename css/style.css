@@ -46,7 +46,7 @@
   padding: 0px 0px 40px 0px;
   width: 100%;
   margin: 0% auto;
-  background-color: #344d70; }
+  background-color: #212529; }
 
 .indexmain {
   grid-column: 1/4;
@@ -57,14 +57,14 @@
   background-image: url(/Imagenes/vamo.jpg);
   width: 100%;
   margin: 0% auto;
-  background-color: #344d70; }
+  background-color: #212529; }
   .indexmain .indexdiv {
     width: 100%; }
     .indexmain .indexdiv iframe {
       margin: 10px auto;
       background-color: black; }
     .indexmain .indexdiv .titulo, .indexmain .indexdiv h3 {
-      background-color: #344d70;
+      background-color: #212529;
       color: white;
       padding: 10px 0px;
       margin: 0 auto; }
