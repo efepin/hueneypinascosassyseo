@@ -1,17 +1,17 @@
 /*Contactanos*/
 
 $colores-fondo:(
-    "azul": #344d70,
+    "dark": #212529,
     "celeste": #559aaf,
     "gris": #88A0B8,
     "marron": #93714a,
-    "blanco": #BAC6D8,
+    "blanco": white,
 );
 
 @mixin propfondo {
     width: 100%;
     margin: 0% auto;
-    background-color: map-get($colores-fondo, azul);
+    background-color: map-get($colores-fondo, dark);
     color: map-get($colores-fondo, blanco);
         
 }
@@ -26,23 +26,24 @@ $colores-fondo:(
         grid-column: 1/4;
         grid-row: 3/6;
         @include propfondo();
-        color: white;
+        color: map-get($colores-fondo, dark);
+        background-color: map-get($colores-fondo, dark);
         .contactdiv{
             width: 100%;
             display: flex;
             background-image: url(../Imagenes/reserva-laguna-nimez-argentina_l.jpeg);
+            justify-content: space-around;
         
-        form{
+            form{
             width: 50%;
             padding: 1%;
             padding-left: 4%;
                 
         }
             
-        .contactdiv iframe{
+            .contactdiv iframe{
             width: 50%;
-            padding: 5%;
-                
+                           
         }
             
          
@@ -59,4 +60,5 @@ $colores-fondo:(
 .socialmedia{
     text-align: center;
     padding: 40px;
+    text-decoration: none;
 }   

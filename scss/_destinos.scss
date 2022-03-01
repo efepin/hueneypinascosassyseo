@@ -1,17 +1,17 @@
 /*Destinos*/
 
 $colores-fondo:(
-    "azul": #344d70,
+    "dark": #212529,
     "celeste": #559aaf,
     "gris": #88A0B8,
     "marron": #93714a,
-    "blanco": #BAC6D8,
+    "blanco": white,
 );
 
 @mixin propfondo {
     width: 100%;
     margin: 0% auto;
-    background-color: map-get($colores-fondo, azul);
+    background-color: map-get($colores-fondo, dark);
     color: map-get($colores-fondo, blanco);
         
 }
@@ -29,8 +29,9 @@ $colores-fondo:(
         .destinofte{
             @include propfondo();
             text-align: center;
-            background-color: map-get($colores-fondo, gris);
+            background-color: map-get($colores-fondo, blanco);
             padding: 20px 0px;
+            color: map-get($colores-fondo, dark);
                        
         }
     } 
@@ -41,7 +42,7 @@ $colores-fondo:(
     width: 100%;
     display: flex;
     justify-content: space-between;
-    color: map-get($colores-fondo, gris);
+    color: map-get($colores-fondo, blanco);
 
         
 }
@@ -61,9 +62,8 @@ $colores-fondo:(
 .arriba{
     text-align: center;
     width: 100%;
-    color: map-get($colores-fondo, gris);
+    color: map-get($colores-fondo, celeste);
     padding: 10px 0px;
-    background-color: map-get($colores-fondo, celeste);
+    background-color: map-get($colores-fondo, white );
     text-decoration: none;
 }
-
